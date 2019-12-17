@@ -1,1 +1,1 @@
-# malive-tutorial
+# Materials for tutorials using MateriApps LIVE!
