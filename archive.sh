@@ -1,5 +1,6 @@
 #!/bin/sh
 
-tar zcvf gromacs.tgz gromacs
-tar zcvf lammps.tgz lammps
-tar zcvf qe_GaAs.tgz qe_GaAs
+DIR="gromacs lammps qe_GaAs flexible_dmnrg"
+for d in $DIR; do
+  tar zcvf $d.tgz $d
+done
