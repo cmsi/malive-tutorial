@@ -1,0 +1,7 @@
+&bands
+   outdir = './',
+   prefix='WSe2',
+   filband='WSe2.band',
+   lsym=.true.
+/
+
