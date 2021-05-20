@@ -17,6 +17,7 @@ nbnd = 16
 mixing_mode = 'plain'
 mixing_beta = 0.7
 conv_thr = 1.0d-8
+diago_david_ndim = 4
 /
 ATOMIC_SPECIES
 Ga 69.723 Ga.pbe-dn-kjpaw_psl.1.0.0.UPF
