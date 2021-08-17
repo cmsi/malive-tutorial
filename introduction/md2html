@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# sudo apt -y install ruby-dev rubygems
+# sudo gem install github-markdown
+
+CSS="https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css"
+
+GFM=$(find /var/lib/gems -name gfm | tail -n1)
+if [ -z $GFM ]; then
+  echo "Error: gfm not found"
+  exit 127
+fi
+
+for m in $*; do
+  h="$(basename $m .md).html"
+  if [ -f $m ]; then
+    echo "$m -> $h"
+    cat << EOF > $h
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+<!--
+EOF
+    wget -O - "$CSS" >> $h
+    cat << EOF >> $h
+-->
+  </style>
+</head>
+<body>
+EOF
+    $GFM --readme $m >> $h
+    cat << EOF >> $h
+</body>
+</html>
+EOF
+  fi
+done

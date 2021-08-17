@@ -1,5 +1,23 @@
 # UNIX入門
 
+Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
+Last modified: Tue, 17 Aug 2021 19:51:10 +0900
+
+
+このドキュメントでは、UNIX (Debian Linux)に触れたことがないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明します。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md にて公開されています
+
+## Table of contents
+
+* [シェル](#シェル)
+* [コマンドと引数](#コマンドと引数)
+* [基本コマンド](#基本コマンド)
+* [リダイレクション・パイプ](#リダイレクション・パイプ)
+* [補完・履歴・検索](#補完・履歴・検索)
+* [コピー・ペースト](#コピー・ペースト)
+* [エディター](#エディター)
+* [シェルスクリプト](#シェルスクリプト)
+* [参考文献](#参考文献)
+
 ## シェル
 
 ### UNIX (Linux)の操作の基本的なスタイル
@@ -76,7 +94,7 @@ this is my pen
 この例ではどちらも`this`, `is`, `my`, `pen`の4つの文字列がプログラム`echo`に渡される。
 スペースも含めて渡したいときは二重引用符等で囲み、一つの長い文字列として渡す。
 
-```
+```bash
 $ echo "white space    matters"
 white space    matters
 ```
@@ -87,7 +105,7 @@ white space    matters
 環境変数名は大文字を使うことが多い。
 環境変数の値を参照するには先頭に`$`を付ける。
 
-```
+```bash
 $ echo $PATH
 /home/user/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 $ which date
@@ -124,7 +142,7 @@ UNIXではあらかじめいくつかの特別なパスが定義されている
 
 ### ディレクトリの移動 (cdコマンド)
 
-```
+```bash
 user@malive:~$ pwd
 /home/user
 user@malive:~$ cd ..
@@ -137,7 +155,7 @@ user@malive:/$ pwd
 
 ここでは、プロンプトもあらわに書いた。ディレクトリを移動すると、プロンプトのカレントディレクトリを示す部分も変化することが分かる。引数には絶対パスあるいは相対パスを指定する。引数がない場合にはホームディレクトリに移動する。
 
-```
+```bash
 user@malive:/$ cd ~
 user@malive:~$ pwd
 /home/user
@@ -151,7 +169,7 @@ user@malive:~$ pwd
 
 ### ディレクトリの内容表示 (lsコマンド)
 
-```
+```bash
 $ ls
 Desktop    Downloads  Music     Public     Videos
 Documents  hello.txt  Pictures  Templates
@@ -166,7 +184,7 @@ etc   lib             lost+found  proc   srv   var
 
 以下のように実行すると、より詳しい情報が出力される
 
-```
+```bash
 $ ls -l /
 total 57
 lrwxrwxrwx   1 root root     7 May 18 11:56 bin -> usr/bin
@@ -233,7 +251,7 @@ $ ls -l / | tail -n1
 
 パイプを使うことで複数のプログラムを組み合わせて使うことが可能となる。
 
-```
+```bash
 $ pw.x < GaAs.scf.in | tee GaAs.scf.out
 ```
 
@@ -249,12 +267,12 @@ $ pw.x < GaAs.scf.in | tee GaAs.scf.out
 - `Ctrl-N`あるいは「↓」(矢印キー): コマンド履歴を順に下る
 - `Ctrl-R` (reverse incremental search): 履歴を検索する。文字を1文字入力するたびに、履歴中でそこまでが一致しているコマンドが表示される。検索中にさらに`Ctrl-R`を押すと、一致するコマンド履歴を遡ることができる
 
-## Copy & Paste
+## コピー・ペースト
 
 ターミナル上で表示されている文字列のcopy & paste
 
 - copy: 右クリック→「Copy」(あるいは「shift+Ctrl+C」)
--  paste: 右クリック→「Paste」(あるいは「shift+Ctrl+V」)
+- paste: 右クリック→「Paste」(あるいは「shift+Ctrl+V」)
 
 
 ## エディター
@@ -274,11 +292,16 @@ MateriApps LIVE!では、`emacs`, `vim`, `nano`などいろいろな種類のエ
 シェルスクリプトのファイル名は何でもよい。
 実行には`sh`コマンドを使う。
 
-```sh
+```bash
 $ cat myscript
 date
-echo "test script"
+echo "shell script"
 $ sh myscript
 Tue 17 Aug 2021 05:20:01 PM JST
-test script
+shell script
 ```
+
+## 参考文献
+
+1.  MateriApps LIVE! Users Forum: https://github.com/cmsi/MateriAppsLive-forum/wiki
+1. "Course overview + the shell" in "Missing Semester": https://missing.csail.mit.edu
