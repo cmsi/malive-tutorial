@@ -274,10 +274,11 @@ MateriApps LIVE!では、`emacs`, `vim`, `nano`などいろいろな種類のエ
 シェルスクリプトのファイル名は何でもよい。
 実行には`sh`コマンドを使う。
 
-```
+```sh
 $ cat myscript
 date
 echo "test script"
 $ sh myscript
-(省略)
+Tue 17 Aug 2021 05:20:01 PM JST
+test script
 ```
