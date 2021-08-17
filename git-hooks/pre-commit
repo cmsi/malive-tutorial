@@ -1,0 +1,7 @@
+#!/bin/sh
+
+git diff --cached --name-status | grep "^M" | while read a b; do
+  cat $b | sed "s/^Last\ modified:.*$/Last modified: $(date -R)/" > tmp
+  mv tmp $b
+  git add $b
+done
