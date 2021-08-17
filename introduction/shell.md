@@ -1,10 +1,9 @@
 # UNIX入門
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Tue, 17 Aug 2021 19:51:10 +0900
+Last modified: Tue, 17 Aug 2021 20:51:06 +0900
 
-
-このドキュメントでは、UNIX (Debian Linux)に触れたことがないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明します。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md にて公開されています
+このドキュメントでは、これまでUNIX (Linux)に触れたことのないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明する。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md にて公開されている。
 
 ## Table of contents
 
