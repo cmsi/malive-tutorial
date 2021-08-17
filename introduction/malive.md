@@ -1,7 +1,7 @@
 # MateriApps LIVE!のインストール
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Tue, 17 Aug 2021 20:51:06 +0900
+Last modified: Tue, 17 Aug 2021 22:02:18 +0900
 
 このドキュメントでは、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)のインストール方法について説明する。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md にて公開されている。
 
@@ -62,7 +62,7 @@ Last modified: Tue, 17 Aug 2021 20:51:06 +0900
 
 ## MateriApps LIVE!の起動
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp. 12-13
+参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.12-13
 
 * VirtualBoxマネージャーの仮想マシン一覧からMateriAppsLive-3.3-amd64を選択し「起動」
   * 新しいウィンドウが開き、MateriApps LIVE!が起動
@@ -73,7 +73,7 @@ Last modified: Tue, 17 Aug 2021 20:51:06 +0900
 
 ## 追加の設定
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp. 14-15
+参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.14-15
 
 ### キーボード
 
@@ -104,7 +104,7 @@ Last modified: Tue, 17 Aug 2021 20:51:06 +0900
 
 ## もっと大規模な計算がしたい？
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) p. 9
+参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) p.9
 
 * Debian や Ubuntu がインストールされた Linux ワークステーション
   * MateriApps LIVE! の Debian Package が利用可能
@@ -113,6 +113,13 @@ Last modified: Tue, 17 Aug 2021 20:51:06 +0900
 * PCクラスタ、クラウド、物性研や情報基盤センターのスパコン、富岳など
   * MateriApps Installer を利用 https://ma.issp.u-tokyo.ac.jp/app/268
   * 2020年度 東大物性研ソフトウェア開発・高度化プロジェクトとして、リニューアル
+    * 物性研スパコンには、ALPS、DSQSS、Quantum ESPRESSO、HΦ、LAMMPS、mVMC、OpenMX、PHYSBO、RESPACKがプレインストールされている
+* MateriApps Installerによるインストールのチュートリアル・レビュー
+  * MateriApps Installer ドキュメント: 3. チュートリアル: https://wistaria.github.io/MateriAppsInstaller/manual/master/ja/tutorial/index.html
+  * MateriApps Installerを使ってmacOSにQuantum ESPRESSOをインストールする: https://ma.issp.u-tokyo.ac.jp/app-post/5273?appid=720
+  * MateriApps Installerを使ってmacOSにHPhiをインストールする: https://ma.issp.u-tokyo.ac.jp/app-post/5262?appid=339
+  * MateriApps Installerを使ってLinux環境にアプリをインストールする(gcc利用): https://ma.issp.u-tokyo.ac.jp/app-post/5238?appid=268
+  * MateriApps Installerを使ってCenOS７にQuantum ESPRESSOをインストールする: (準備中)
 
 ## 参考文献
 
