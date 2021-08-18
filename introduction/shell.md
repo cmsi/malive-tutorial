@@ -1,9 +1,10 @@
 # UNIX入門
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Tue, 17 Aug 2021 20:51:06 +0900
+Last modified: Wed, 18 Aug 2021 10:00:05 +0900
 
-このドキュメントでは、これまでUNIX (Linux)に触れたことのないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明する。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md にて公開されている。
+このドキュメントでは、これまでUNIX (Linux)に触れたことのないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明する。
+このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md]()にて公開されている。
 
 ## Table of contents
 
@@ -31,6 +32,7 @@ UNIXでは、ターミナルを開き、その中でキーボードで「コマ�
 - プログラム開発などGUI向きではない作業も多い
 - GUIではいろいろな制約がある。提供されているツール・プログラムを最大限活用するにはCUIを使う必要あり
 - 慣れるとGUIよりも速い操作が可能
+- 自動化が容易(cf. シェルスクリプト)
 - デスクトップPCからスパコンまで統一的に利用可能
 - 遠隔地にあるコンピュータをネットワークを通じて透過的に利用することができる(例: 物性研スパコン、富岳コンピュータ)
 
@@ -204,7 +206,7 @@ Tue 17 Aug 2021 08:15:11 AM UTC
 $ date --help
 ```
 
-`date`コマンドに`-u`オプションを渡すと、日時をUTCで表示することができる。`--help`オプション(あるいは`-h`)を渡すと、そのコマンドの使用方法が表示される。
+`date`コマンドに`-u`オプションを渡すと、日時をUTCで表示することができる。一般に、`--help`オプション(あるいは`-h`)を渡すと、そのコマンドの使用方法が表示される。
 
 ### ファイルの操作
 
@@ -276,11 +278,11 @@ $ pw.x < GaAs.scf.in | tee GaAs.scf.out
 
 ## エディター
 
-MateriApps LIVE!では、`emacs`, `vim`, `nano`などいろいろな種類のエディターが利用可能。好みのものを使ってよいが、ここでは`mousepad`という名前のエディタを紹介する
+MateriApps LIVE!では、`emacs`, `vim`, `nano`などいろいろな種類のエディターが利用可能。好みのものを使ってよいが、ここでは`mousepad`というシンプルで使いやすいエディタを紹介する
 
 ### mousepad
 
-- ファイルの編集開始: `mousepad ファイル名`
+- ファイルの編集開始: `$ mousepad ファイル名`
 - 矢印キーでの移動・キー入力
 - 保存: 「Save」メニュー、あるいは`Ctrl+S`
 - 終了: 「Quit」メニュー、あるいは`Ctrl+Q`
@@ -302,5 +304,5 @@ shell script
 
 ## 参考文献
 
-1.  MateriApps LIVE! Users Forum: https://github.com/cmsi/MateriAppsLive-forum/wiki
-1. "Course overview + the shell" in "Missing Semester": https://missing.csail.mit.edu
+1.  MateriApps LIVE! Users Forum: [https://github.com/cmsi/MateriAppsLive-forum/wiki]()
+1. "Course overview + the shell" in "Missing Semester": [https://missing.csail.mit.edu]()

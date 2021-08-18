@@ -1,9 +1,9 @@
 # MateriApps LIVE!のインストール
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Tue, 17 Aug 2021 22:02:18 +0900
+Last modified: Wed, 18 Aug 2021 10:00:05 +0900
 
-このドキュメントでは、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)のインストール方法について説明する。このドキュメントの最新版は https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md にて公開されている。
+このドキュメントでは、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)のインストール方法について説明する。このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md]() にて公開されている。
 
 ## Table of contents
 
@@ -49,12 +49,12 @@ Last modified: Tue, 17 Aug 2021 22:02:18 +0900
   * Windowsの場合、あらかじめCPUの仮想化機能(VT-x)がオンになっているかどうかを確認する
 * 必要なファイルのダウンロード
   * 以下のいずれかから MateriAppsLive-3.3.zip をダウンロード
-     * DropBox: https://www.dropbox.com/s/d597japr0gxlky5/MateriAppsLive-3.3.zip?dl=1
-     * Google Drive: https://drive.google.com/file/d/1639lq1P03AnNjFjo9ZzQcoz0_ZKe6MIE
-     * SourceForge: https://sourceforge.net/projects/materiappslive/files/Release-3.3/MateriAppsLive-3.3.zip/download
+     * DropBox: [https://www.dropbox.com/s/d597japr0gxlky5/MateriAppsLive-3.3.zip?dl=1]()
+     * Google Drive: [https://drive.google.com/file/d/1639lq1P03AnNjFjo9ZzQcoz0_ZKe6MIE]()
+     * SourceForge: [https://sourceforge.net/projects/materiappslive/files/Release-3.3/MateriAppsLive-3.3.zip/download]()
 * VirtualBoxのインストール
   * ダウンロードしたzipファイルを展開すると、VirtualBoxインストーラが含まれている。Windowsではexeファイル、macOSではdmgをダブルクリックしてインストールを実行する
-  * macOSではOSのセキュリティー機能により、VirtualBoxが正しくインストールできない場合がある。インストール後、「システム環境設定」の「セキュリティーとプライバシー」を開いて、Oracleのソフトウェアがブロックされている場合には、「許可」した後、VirtualBoxを再インストールする (参考: https://github.com/cmsi/MateriAppsLive/wiki/FAQ#virtualbox-1)
+  * macOSではOSのセキュリティー機能により、VirtualBoxが正しくインストールできない場合がある。インストール後、「システム環境設定」の「セキュリティーとプライバシー」を開いて、Oracleのソフトウェアがブロックされている場合には、「許可」した後、VirtualBoxを再インストールする (参考: [https://github.com/cmsi/MateriAppsLive/wiki/FAQ#virtualbox-1]())
 * MateriApps LIVE!のインポート
   * 配布ファイルに含まれているMateriAppsLive-3.3-amd64.ovaをダブルクリック
   * VirtualBoxが起動してインポート画面が開くので「インポート」ボタンを押す
@@ -106,26 +106,27 @@ Last modified: Tue, 17 Aug 2021 22:02:18 +0900
 
 参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) p.9
 
-* Debian や Ubuntu がインストールされた Linux ワークステーション
-  * MateriApps LIVE! の Debian Package が利用可能
-  * https://github.com/cmsi/MateriAppsLive/wiki/UsingMateriAppsInDebian
-  * (Google Colabにもインストール可)
+* DebianやUbuntuがインストールされたLinuxワークステーション
+  * MateriApps LIVE!のDebian Packageが利用可能
+      * [https://github.com/cmsi/MateriAppsLive/wiki/UsingMateriAppsInDebian]()
+      * (Google Colabにもインストール可)
 * PCクラスタ、クラウド、物性研や情報基盤センターのスパコン、富岳など
-  * MateriApps Installer を利用 https://ma.issp.u-tokyo.ac.jp/app/268
-  * 2020年度 東大物性研ソフトウェア開発・高度化プロジェクトとして、リニューアル
-    * 物性研スパコンには、ALPS、DSQSS、Quantum ESPRESSO、HΦ、LAMMPS、mVMC、OpenMX、PHYSBO、RESPACKがプレインストールされている
+  * MateriApps Installer を利用
+      *  [https://ma.issp.u-tokyo.ac.jp/app/268]()
+      * 2020年度 東大物性研ソフトウェア開発・高度化プロジェクトとして、リニューアル
+    * 物性研スパコンには、MateriApps Installerを利用して、ALPS、DSQSS、Quantum ESPRESSO、HΦ、LAMMPS、mVMC、OpenMX、PHYSBO、RESPACKなどがプレインストールされている
 * MateriApps Installerによるインストールのチュートリアル・レビュー
-  * MateriApps Installer ドキュメント: 3. チュートリアル: https://wistaria.github.io/MateriAppsInstaller/manual/master/ja/tutorial/index.html
-  * MateriApps Installerを使ってmacOSにQuantum ESPRESSOをインストールする: https://ma.issp.u-tokyo.ac.jp/app-post/5273?appid=720
-  * MateriApps Installerを使ってmacOSにHPhiをインストールする: https://ma.issp.u-tokyo.ac.jp/app-post/5262?appid=339
-  * MateriApps Installerを使ってLinux環境にアプリをインストールする(gcc利用): https://ma.issp.u-tokyo.ac.jp/app-post/5238?appid=268
-  * MateriApps Installerを使ってCenOS７にQuantum ESPRESSOをインストールする: (準備中)
+  * MateriApps Installer ドキュメント: 3. チュートリアル: [https://wistaria.github.io/MateriAppsInstaller/manual/master/ja/tutorial/index.html]()
+  * MateriApps Installerを使ってmacOSにQuantum ESPRESSOをインストールする: [https://ma.issp.u-tokyo.ac.jp/app-post/5273?appid=720]()
+  * MateriApps Installerを使ってmacOSにHPhiをインストールする: [https://ma.issp.u-tokyo.ac.jp/app-post/5262?appid=339]()
+  * MateriApps Installerを使ってLinux環境にアプリをインストールする(gcc利用): [https://ma.issp.u-tokyo.ac.jp/app-post/5238?appid=268]()
+  * MateriApps Installerを使ってCentOS７にQuantum ESPRESSOをインストールする: (準備中)
 
 ## 参考文献
 
 1. Web講習会(オンラインチュートリアル)のための準備: 
- https://github.com/cmsi/MateriAppsLive/wiki/OnlineTutorial
+ [https://github.com/cmsi/MateriAppsLive/wiki/OnlineTutorial]()
 
-1. MateriApps LIVE!の設定: https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf
+1. MateriApps LIVE!の設定: [https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf]()
 
-1.  MateriApps LIVE! Users Forum: https://github.com/cmsi/MateriAppsLive-forum/wiki
+1.  MateriApps LIVE! Users Forum: [https://github.com/cmsi/MateriAppsLive-forum/wiki]()

@@ -1,4 +1,4 @@
-default: malive.html shell.html
+html: malive.html shell.html
 
 malive.html : malive.md
 	sh md2html malive.md
