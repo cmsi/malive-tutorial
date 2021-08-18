@@ -1,7 +1,7 @@
 # MateriApps LIVE!のインストール
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Wed, 18 Aug 2021 10:00:05 +0900
+Last modified: Wed, 18 Aug 2021 16:42:38 +0900
 
 このドキュメントでは、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)のインストール方法について説明する。このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md]() にて公開されている。
 
@@ -120,7 +120,7 @@ Last modified: Wed, 18 Aug 2021 10:00:05 +0900
   * MateriApps Installerを使ってmacOSにQuantum ESPRESSOをインストールする: [https://ma.issp.u-tokyo.ac.jp/app-post/5273?appid=720]()
   * MateriApps Installerを使ってmacOSにHPhiをインストールする: [https://ma.issp.u-tokyo.ac.jp/app-post/5262?appid=339]()
   * MateriApps Installerを使ってLinux環境にアプリをインストールする(gcc利用): [https://ma.issp.u-tokyo.ac.jp/app-post/5238?appid=268]()
-  * MateriApps Installerを使ってCentOS７にQuantum ESPRESSOをインストールする: (準備中)
+  * MateriApps Installerを使ってCentOS７にQuantum ESPRESSOをインストールする: [https://ma.issp.u-tokyo.ac.jp/app-post/5391?appid=720]()
 
 ## 参考文献
 
