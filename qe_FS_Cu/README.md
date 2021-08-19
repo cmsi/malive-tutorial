@@ -21,3 +21,37 @@ pw.x < Cu.scf.in
 ```
 fermisurfer vfermi.frmsf
 ```
+
+バンド図を書くために細かい波数でエネルギーを計算
+
+```
+pw.x < Cu.nscf.in
+```
+
+バンドの情報を抽出
+
+```
+bands.x < Cu.band.in
+```
+
+バンド図を表示
+
+```
+gnuplot -persisten plot.gp
+```
+
+# 並列計算について
+
+CPUのコアが複数ある場合、MPI並列を用いると計算が速くなります。ターミナルで最初に一回、
+
+```
+export OMP_NUM_THREADS=1
+```
+
+を実行します。あとは同じターミナルで、例えば
+
+```
+mpirun -np 4 pw.x < GaAs.scf.in
+```
+
+を行うと速くされます。ここで4は並列度です。コンピュータのCPUのコア数の応じて値を変えてください。
