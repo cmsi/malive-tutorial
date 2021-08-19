@@ -1,8 +1,5 @@
 #!/usr/local/bin/gnuplot -persist
 # Last modified: 2019/10/30 16:28
-set terminal postscript eps enhanced 28 lw 2
-set output "band_Cu.eps"
-
 set ylabel 'Energy (eV)'
 set ytics 5
 unset key
