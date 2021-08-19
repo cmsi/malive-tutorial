@@ -51,7 +51,7 @@ export OMP_NUM_THREADS=1
 を実行します。あとは同じターミナルで、例えば
 
 ```
-mpirun -np 4 pw.x < GaAs.scf.in
+mpirun -np 4 pw.x < Cu.scf.in
 ```
 
 を行うと速くされます。ここで4は並列度です。コンピュータのCPUのコア数の応じて値を変えてください。
