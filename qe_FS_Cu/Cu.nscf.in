@@ -1,0 +1,36 @@
+&control
+    calculation='bands' ,
+    prefix='Cu' ,
+    outdir = './work/' ,
+    pseudo_dir = './' 
+/
+&system
+    ibrav = 2 ,
+    A = 3.621262 ,
+    nat =  1 ,
+    ntyp = 1 ,
+    nbnd = 30 ,
+    ecutwfc = 45.0 ,
+    ecutrho = 236.0 ,
+    occupations = 'smearing' ,
+    degauss = 0.05 , 
+    smearing = 'gaussian' ,
+/
+&electrons
+    conv_thr = 1.0d-8 ,
+/
+ATOMIC_SPECIES
+Cu   63.546   Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS {angstrom}
+Cu     0.000000   0.000000   0.000000 0 0 0
+K_POINTS {tpiba_b}
+6
+ 0.00  0.00  0.00  40 !G
+ 0.00  1.00  0.00  20 !X
+ 0.50  1.00  0.00  30 !W
+ 0.50  0.50  0.50  30 !L
+ 0.00  0.00  0.00  50 !G
+ 1.00  0.00  1.00  40 !X
+
+
+
