@@ -1,0 +1,35 @@
+&control
+calculation = 'vc-relax' 
+restart_mode='from_scratch'
+prefix = 'GaAs'
+pseudo_dir = './'
+wf_collect = .true.
+outdir = 'tmp'
+/
+&system
+ibrav = 2
+celldm(1) = 10.869
+nat = 2
+ntyp = 2
+ecutwfc = 100
+ecutrho = 400
+occupations='fixed'
+/
+&electrons
+mixing_mode = 'plain'
+mixing_beta = 0.5
+conv_thr = 1.0d-10
+/
+&ions
+/
+&cell
+press_conv_thr = 0.1
+/
+ATOMIC_SPECIES
+Ga 69.723 Ga.pbe-dn-kjpaw_psl.1.0.0.UPF
+As 74.921595 As.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS
+Ga 0.00 0.00 0.00
+As 0.25 0.25 0.25
+K_POINTS {automatic}
+6 6 6 1 1 1
