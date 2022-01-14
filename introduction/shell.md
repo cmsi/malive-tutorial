@@ -304,5 +304,5 @@ shell script
 
 ## 参考文献
 
-1.  MateriApps LIVE! Users Forum: [https://github.com/cmsi/MateriAppsLive-forum/wiki]()
-1. "Course overview + the shell" in "Missing Semester": [https://missing.csail.mit.edu]()
+1.  MateriApps LIVE! Users Forum: https://github.com/cmsi/MateriAppsLive-forum/wiki
+1. "Course overview + the shell" in "Missing Semester": https://missing.csail.mit.edu
