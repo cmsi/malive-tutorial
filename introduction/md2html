@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# sudo apt -y install ruby-dev rubygems
-# sudo gem install github-markdown
+sudo apt -y install ruby-dev rubygems
+sudo gem install github-markdown
 
 CSS="https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css"
 
