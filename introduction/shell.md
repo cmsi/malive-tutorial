@@ -1,10 +1,10 @@
 # UNIX入門
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Wed, 18 Aug 2021 10:00:05 +0900
+Last modified: Mon, 19 Sep 2022 20:13:57 +0900
 
 このドキュメントでは、これまでUNIX (Linux)に触れたことのないユーザを対象に、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)を使ったチュートリアルを実行するのに最低限必要と思われる事項について説明する。
-このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md]()にて公開されている。
+このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md](https://github.com/cmsi/malive-tutorial/blob/master/introduction/shell.md)にて公開されている。
 
 ## Table of contents
 
@@ -40,7 +40,7 @@ UNIXでは、ターミナルを開き、その中でキーボードで「コマ�
 
 入力されたコマンドを解釈し適切なプログラムを実行するのがシェル(shell)の役割
 
-ターミナル(MateriApps LIVE!ではLX Terminal)を開くと 
+ターミナル(MateriApps LIVE! VirtualBox版ではLX Terminal、Docker版では`malive`スクリプトを実行)を開くと 
 
 ```bash
 user@malive:~$
@@ -135,7 +135,7 @@ $ pwd
 UNIXではあらかじめいくつかの特別なパスが定義されている
 
 - `/`: ルートディレクトリ
-- `.`: → カレントワーキングディレクトリ
+- `.`: カレントワーキングディレクトリ
 -  `..`: 一つ階層が上のディレクトリ
 - `~`: ホームディレクトリ(ターミナルを開いた時に最初にいるディレクトリ)
 
@@ -272,20 +272,26 @@ $ pw.x < GaAs.scf.in | tee GaAs.scf.out
 
 ターミナル上で表示されている文字列のcopy & paste
 
-- copy: 右クリック→「Copy」(あるいは「shift+Ctrl+C」)
-- paste: 右クリック→「Paste」(あるいは「shift+Ctrl+V」)
-
+- copy: 右クリック→「Copy」(MateriApps LIVE! VirtualBox版では「shift+Ctrl+C」でも可。Docker版では「Command+C」でも可)
+- paste: 右クリック→「Paste」(MateriApps LIVE! VirtualBox版では「shift+Ctrl+V」でも可。Docker版では「Command+V」でも可)
 
 ## エディター
 
-MateriApps LIVE!では、`emacs`, `vim`, `nano`などいろいろな種類のエディターが利用可能。好みのものを使ってよいが、ここでは`mousepad`というシンプルで使いやすいエディタを紹介する
+MateriApps LIVE! VirtualBox版では、`emacs`, `vim`, `nano`, `mousepad`などいろいろな種類のエディターが利用可能。Docker版では現時点では`emacs`,  `vim`のみがインストールされている。好みのものを使ってよいが、ここでは`mousepad`と`emacs`について最低限の使い方を紹介する
 
-### mousepad
+### mousepad (Docker版では動作しない)
 
 - ファイルの編集開始: `$ mousepad ファイル名`
 - 矢印キーでの移動・キー入力
 - 保存: 「Save」メニュー、あるいは`Ctrl+S`
 - 終了: 「Quit」メニュー、あるいは`Ctrl+Q`
+
+### emacs (VirtualBox版・Docker版ともに動作)
+
+- ファイルの編集開始: `$ emacs ファイル名`
+- 矢印キーでの移動・キー入力
+- 保存: 「File」メニュー → 「Save」、あるいは`Ctrl+X`に続いて`Ctrl+S`
+- 終了: 「File」メニュー → 「Quit」、あるいは`Ctrl+X`に続いて`Ctrl+Q`
 
 ## シェルスクリプト
 

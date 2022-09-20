@@ -1,0 +1,6 @@
+services:
+  md2html:
+    build: .
+    volumes:
+      - .:/source
+    command: sh -c 'cd /source; sh md2html malive.md; sh md2html shell.md'
