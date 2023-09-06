@@ -1,7 +1,7 @@
 # MateriApps LIVE!のインストール
 
 Author: Synge Todo <<wistaria@phys.s.u-tokyo.ac.jp>>  
-Last modified: Mon, 19 Sep 2022 19:47:43 +0900
+Last modified: Wed, 06 Sep 2023 11:00:17 +0900
 
 このドキュメントでは、[MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/)のインストール方法について説明する。このドキュメントの最新版は [https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md](https://github.com/cmsi/malive-tutorial/blob/master/introduction/malive.md) にて公開されている。
 
@@ -13,11 +13,11 @@ Last modified: Mon, 19 Sep 2022 19:47:43 +0900
 
 ## MateriAppsについて
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.2-5
+参照: [MateriApps LIVE!の設定](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding?slide=2) pp.2-5
 
 ## MateriApps LIVE!のインストール
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.6-9
+参照: [MateriApps LIVE!の設定](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding?slide=6) pp.6-9
 
 ### 二種類のMateriApps LIVE!
 
@@ -38,7 +38,7 @@ Last modified: Mon, 19 Sep 2022 19:47:43 +0900
 
 参照: [Web講習会(オンラインチュートリアル)のための準備](https://github.com/cmsi/MateriAppsLive/wiki/OnlineTutorial)
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.11-12
+参照: [MateriApps LIVE!の設定](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding?slide=11) pp.11-12
 
 * PCの確認
   * Windows, Intel Mac, Linuxなど, VirtualBoxが動作するx86 PCが必要
@@ -49,7 +49,7 @@ Last modified: Mon, 19 Sep 2022 19:47:43 +0900
 
 ### MateriApps LIVE! VirtualBox版 - 起動
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.13-14
+参照: [MateriApps LIVE!の設定](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding?slide=13) pp.13-14
 
 * VirtualBoxマネージャーの仮想マシン一覧からMateriAppsLive-3.3-amd64を選択し「起動」
 * スタートメニュー → System Tools → LXTerminalでターミナルが立ち上がる
@@ -57,7 +57,7 @@ Last modified: Mon, 19 Sep 2022 19:47:43 +0900
 
 ### MateriApps LIVE! VirtualBox版 - 追加の設定
 
-参照: [MateriApps LIVE!の設定](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf) pp.15-
+参照: [MateriApps LIVE!の設定](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding?slide=15) pp.15-
 
 * キーボード
 * 仮想マシンウインドウの解像度・スケールの変更
@@ -81,7 +81,7 @@ Last modified: Mon, 19 Sep 2022 19:47:43 +0900
 1. Web講習会(オンラインチュートリアル)のための準備: 
  [https://github.com/cmsi/MateriAppsLive/wiki/OnlineTutorial](https://github.com/cmsi/MateriAppsLive/wiki/OnlineTutorial)
 
-2. MateriApps LIVE!の設定: [https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf](https://github.com/cmsi/malive-tutorial/blob/master/setup/setup.pdf)
+2. MateriApps LIVE!の設定: [https://speakerdeck.com/wistaria/materiapps-live-noshe-ding](https://speakerdeck.com/wistaria/materiapps-live-noshe-ding)
 
 3. MateriApps LIVE! (Docker版)の起動方法: [https://github.com/cmsi/MateriAppsLive/wiki/GettingStartedDocker](https://github.com/cmsi/MateriAppsLive/wiki/GettingStartedDocker)
 
