@@ -291,7 +291,7 @@ MateriApps LIVE! VirtualBox版では、`emacs`, `vim`, `nano`, `mousepad`など�
 - ファイルの編集開始: `$ emacs ファイル名`
 - 矢印キーでの移動・キー入力
 - 保存: 「File」メニュー → 「Save」、あるいは`Ctrl+X`に続いて`Ctrl+S`
-- 終了: 「File」メニュー → 「Quit」、あるいは`Ctrl+X`に続いて`Ctrl+Q`
+- 終了: 「File」メニュー → 「Quit」、あるいは`Ctrl+X`に続いて`Ctrl+C`
 
 ## シェルスクリプト
 
